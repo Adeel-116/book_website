@@ -7,12 +7,13 @@ import Form from "../components/Form";
 import Slider from "../components/Slider";
 
 function HomePage() {
+
   return (
     <>
       <div className="w-full h-auto flex">
         <div
-          className="w-full h-auto bg-cover bg-center relative"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
+          className="w-full h-auto bg-cover bg-center relative bg-gray-900"
+          style={{ backgroundImage: `url(${""})` }}
         >
           <header className="fixed top-0 left-0 z-[100] w-full flex justify-center bg-[#F6F8FA]">
             <Header />
