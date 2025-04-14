@@ -39,7 +39,7 @@
 
 
 h1 {
-  @apply 2xl:text-5xl xl:text-6xl lg:text-5xl md:text-4xl font-bold;
+  @apply 2xl:text-5xl xl:text-6xl lg:text-5xl text-4xl font-bold;
 }
 h2 {
   @apply xl:text-4xl lg:text-3xl md:text-2xl  font-semibold;
