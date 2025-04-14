@@ -4,7 +4,6 @@ import Button from "../components/Button";
 import ratingImage from "../assets/toprating.png";
 import Form from "../components/Form";
 import Slider from "../components/Slider";
-import bgVideo from "../assets/bg_video3.mp4";
 import ServiceCard from "../components/ServiceCard";
 import BookImage from "../assets/book5.webp";
 import IntroCard from "../components/IntroCard";
@@ -14,8 +13,7 @@ import Portfolio from "../components/Portfolio"
 import CTASection from "../components/CTASection";
 import Book7 from "../assets/book7.webp"
 import FAQ from "../components/FAQ";
-import CTABook1 from "../assets/cta-Book.webp"
-import CTABook2 from "../assets/cta-Book2.webp"
+
 
 function HomePage() {
   return (
@@ -151,52 +149,9 @@ function HomePage() {
         </section>
 
 
+    
 
-
-        {/* <section className="w-full min-h-[400px] bg-blue-500 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 py-10 lg:py-0 overflow-hidden">
-         
-          <div className="hidden lg:block flex-1 relative h-full min-h-[300px]">
-            <img
-              src={CTABook2}
-              alt="Book marketing visual"
-              className="w-full h-full object-cover object-left"
-            />
-          </div>
-
-          
-          <div className="flex-1 max-w-4xl text-center space-y-6 p-6 lg:p-10">
-            <p className="text-base sm:text-lg font-semibold text-black mb-4">
-              Do You Want Your Business To Profit?
-            </p>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-6">
-              Get Help Of A Book Marketing Strategist Encouraging An ROI Marketing Approach
-            </h2>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                text="Get A Quote"
-                className="w-full sm:w-auto px-8 py-3 text-sm sm:text-base"
-              />
-              <Button
-                text="Live Chat"
-                className="w-full sm:w-auto px-8 py-3 text-sm sm:text-base"
-              />
-              <Button
-                text="+1 302-518-4405"
-                className="w-full sm:w-auto px-8 py-3 text-sm sm:text-base bg-gray-100 hover:bg-gray-200"
-              />
-            </div>
-          </div>
-
-          
-          <div className="hidden lg:block flex-1 relative h-full min-h-[300px]">
-            <img
-              src={CTABook1}
-              alt="Marketing strategy visual"
-              className="w-full h-full object-cover object-right"
-            />
-          </div>
-        </section> */}
+        
 
 
       </div>
