@@ -1,14 +1,27 @@
-import { useState } from 'react'
+import './App.css'
 import HomePage from './pages/HomePage'
-
+import {useState, useEffect} from 'react'
+import LoadingScreen from './components/LoadingScreen'
 function App() {
-  const [count, setCount] = useState(0)
+    const [loading, setLoading] = useState(false)
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000)
+    }, [])
+
+
 
   return (
-    <>
-     <HomePage />
+    <>  
+   
+       {loading ? <LoadingScreen /> : <HomePage />}
+      
     </>
   )
 }
+
+
 
 export default App

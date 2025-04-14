@@ -6,8 +6,8 @@ import SelectBox from "./SelectBox";
 
 function Form() {
   return (
-    <div className="w-full h-auto bg-gray-100">
-      <div className="w-auto bg-gray-50 rounded-xl shadow-md py-4 px-3 max-w-3xl mx-auto">
+    <div className="w-full h-auto bg-gray-100 rounded-4xl">
+      <div className="w-auto bg-gray-50 rounded-xl shadow-md py-4 px-5 max-w-3xl mx-auto">
         <h2 className="font-bold text-gray-600 text-center mb-8 text-xl">
           UP TO 50% DISCOUNT
         </h2>

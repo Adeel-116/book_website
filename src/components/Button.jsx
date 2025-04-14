@@ -1,27 +1,50 @@
-import  {useEffect, useState} from 'react'
+import { useState } from 'react'
 
-export default function({text, children}) {
-    const [animation, setAnimation] = useState(false)
-    useEffect(()=>{
-        setAnimation(false)
-    }, [])
+export default function SimpleButton({ text, children }) {
+  const [isHovered, setIsHovered] = useState(false)
 
-    return (
-        <div className={`w-fit relative bg-[#00c0ff] overflow-hidden xl:p-3 p-1.5 group ${children}`}
-            onMouseEnter={() => setAnimation(true)}
-            onMouseLeave={() => setAnimation(false)}
-        >
-            {/* Background Animation */}
-            <div className="absolute inset-0 bg-black translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0"></div>
+  return (
+    <button 
+      className={`
+        relative 
+        overflow-hidden 
+        px-6 py-2.5
+        rounded-md 
+        font-medium 
+        text-white 
+        bg-gradient-to-r 
+        from-indigo-500 
+        to-blue-500 
+        ${isHovered ? 'from-indigo-600 to-blue-600 scale-[1.02] shadow-lg' : ''}
+        transition-all 
+        duration-300 
+        transform 
+        hover:scale-[1.02]
+        shadow-md 
+        hover:shadow-lg
+        group
+        ${children}
+      `}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Subtle background animation */}
+      <div className={`
+        absolute 
+        inset-0 
+        bg-white/10 
+        opacity-0 
+        group-hover:opacity-100 
+        transition-opacity 
+        duration-300
+      `}></div>
 
-            {/* Text */}
-            <div className="relative z-10">
-                <span className="font-medium"
-                    style={{color: animation ? "white" : "#ffff"}}
-                >
-                    {text}
-                </span>
-            </div>
-        </div>
-    )
+      {/* Content */}
+      <div className="relative z-10 flex justify-center items-center gap-2 ">
+        <span className="transition-transform duration-300 group-hover:translate-y-[-1px] text-center">
+          {text}
+        </span>
+      </div>
+    </button>
+  )
 }
